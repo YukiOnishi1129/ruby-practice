@@ -110,10 +110,10 @@ FLUSH PRIVILEGES;
 docker-compose up
 
 # dbコンテナで、上記のSQLを流します。
-docker-compose exec db mysql -u root -p -e"$(cat back/db/grant_user.sql)"
+docker-compose exec db mysql -u root -p -e"$(cat backend/db/grant_user.sql)"
 
 # DBの作成。
-docker-compose run back rails db:create
+docker-compose run backend rails db:create
 ```
 
 - http://localhost:3000/でアクセスできる

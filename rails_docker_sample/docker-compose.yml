@@ -9,6 +9,8 @@ services:
     restart: always
     volumes:
       - db-data:/var/lib/mysql:cached
+    ports:
+      - 3306:3306
 
   backend:
     container_name: rails_app
