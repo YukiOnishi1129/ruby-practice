@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  db:
+    container_name: rails_db
+    image: mysql:5.7
+    env_file:
+      - ./backend/.env
+    restart: always
+    volumes:
+      - db-data:/var/lib/mysql:cached
+
+  backend:
+    container_name: rails_app
+    build: backend/
+    # rm -f tmp/pids/server.pidしとくとrailsのサーバ消し損ねたときに便利
+    command: /bin/sh -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    env_file:
+      - ./backend/.env
+    volumes:
+      - ./backend:/app:cached
+    depends_on:
+      - db
+    # ホストコンピュータのポート：Docker内のポート
+    ports:
+      - 3000:3000
+volumes:
+  public-data:
+  tmp-data:
+  log-data:
+  db-data:
