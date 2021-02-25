@@ -1,27 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Docker command
 
-Things you may want to cover:
+## build
 
-- Ruby version
+- docker-compose build
 
-- System dependencies
+## 起動
 
-- Configuration
+- docker-compose up -d
 
-- Database creation
+## 停止
 
-- Database initialization
+- docker-compose down
 
-- How to run the test suite
+### ログイン
 
-- Services (job queues, cache servers, search engines, etc.)
+- docker exec -it rails_app_web_1 sh
 
-- Deployment instructions
+## Reference
 
-- Reference
-
-* https://zenn.dev/shima_zu/articles/docker_on_rails6_mysql8
-* https://qiita.com/nsy_13/items/9fbc929f173984c30b5d
+- https://zenn.dev/shima_zu/articles/docker_on_rails6_mysql8
+- https://qiita.com/nsy_13/items/9fbc929f173984c30b5d
