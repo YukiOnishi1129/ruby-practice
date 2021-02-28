@@ -17,12 +17,19 @@ rescue => exception
 # name = 'Alice'
 # puts "Hello, #{name}"
 
-find_data = nil
+# find_data = nil
 
-data = find_data
+# data = find_data
 
-if data != nil
-    puts 'データがあります'
-else
-    puts 'データがありません'
+# if data != nil
+#     puts 'データがあります'
+# else
+#     puts 'データがありません'
+# end
+
+def add(a, b)
+    b = b + 1
+    a + b
 end
+
+puts add(1, 2)
