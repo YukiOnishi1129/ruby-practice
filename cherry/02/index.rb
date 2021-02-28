@@ -14,5 +14,15 @@ rescue => exception
 
 # puts 'こんにちは\nさようなら'
 
-name = 'Alice'
-puts "Hello, #{name}"
+# name = 'Alice'
+# puts "Hello, #{name}"
+
+find_data = nil
+
+data = find_data
+
+if data != nil
+    puts 'データがあります'
+else
+    puts 'データがありません'
+end
