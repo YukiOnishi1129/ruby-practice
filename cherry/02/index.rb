@@ -1,5 +1,5 @@
-puts "Hello, World!"
-puts 1 + 2
+# puts "Hello, World!"
+# puts 1 + 2
 
 # コメント
 
@@ -7,4 +7,12 @@ puts 1 + 2
     方
 rescue => exception
     こんなコメントもできるのか
-end
+=end
+
+# ダブルコートだと\nが改行として機能する
+# puts "こんにちは\nさようなら"
+
+# puts 'こんにちは\nさようなら'
+
+name = 'Alice'
+puts "Hello, #{name}"
