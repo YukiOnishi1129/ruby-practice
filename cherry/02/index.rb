@@ -27,9 +27,14 @@ rescue => exception
 #     puts 'データがありません'
 # end
 
-def add(a, b)
-    b = b + 1
-    a + b
-end
+# def add(a, b)
+#     b = b + 1
+#     a + b
+# end
 
-puts add(1, 2)
+# puts add(1, 2)
+
+status ='ok'
+unless status == 'ok'
+    puts ''
+end
