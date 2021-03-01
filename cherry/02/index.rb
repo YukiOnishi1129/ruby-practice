@@ -41,15 +41,17 @@ rescue => exception
 #     puts '正常だよ'
 # end
 
-country = 'italy'
+# country = 'italy'
 
-case country
-when 'japan'
-    puts 'こんにちは'
-when 'italy'
-    puts 'イタリア語'
-when 'us'
-    puts 'アメリカ'
-else
-    puts '引っかからない'
-end
+# case country
+# when 'japan'
+#     puts 'こんにちは'
+# when 'italy'
+#     puts 'イタリア語'
+# when 'us'
+#     puts 'アメリカ'
+# else
+#     puts '引っかからない'
+# end
+
+puts ''.empty?
