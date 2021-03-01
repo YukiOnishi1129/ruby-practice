@@ -34,7 +34,22 @@ rescue => exception
 
 # puts add(1, 2)
 
-status ='ok'
-unless status == 'ok'
-    puts ''
+# status ='ok'
+# unless status == 'ok'
+#     puts '何か以上あるよ'
+# else
+#     puts '正常だよ'
+# end
+
+country = 'italy'
+
+case country
+when 'japan'
+    puts 'こんにちは'
+when 'italy'
+    puts 'イタリア語'
+when 'us'
+    puts 'アメリカ'
+else
+    puts '引っかからない'
 end
